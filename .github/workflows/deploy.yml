@@ -28,6 +28,10 @@ jobs:
       - name: Build polos-wch
         run: cd polos-wch && mdbook build
 
+      - name: 复制文件index.html到docs目录
+        run: |
+          cp index.html docs/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
