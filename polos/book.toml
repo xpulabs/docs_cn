@@ -6,7 +6,5 @@ src = "src"
 title = "Polos WCH MCU开发板使用指南"
 
 [output.html]
-destination = "../docs/polos-wch"
-
-[output.html.fold]
-enable = false  # 是否允许折叠章节（默认 false）
+destination = "../docs/polos"
+sidebar = true  # 关键配置：强制显示侧边栏（禁用自动隐藏）
